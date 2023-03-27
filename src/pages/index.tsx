@@ -43,10 +43,10 @@ export default function Home() {
       return;
     }
 
-    // if(navigator.canShare == undefined){
-    //   downloadImage(newFile);
-    //   return;
-    // }
+    if(navigator.canShare == undefined){
+      downloadImage(newFile);
+      return;
+    }
 
     const data = {
       files: [
